@@ -5,9 +5,9 @@ async function Atm() {
     const pinAnswar = await inquirer.prompt({
         type: "number",
         name: "pin",
-        message: "Please Enter Your Number"
+        message: "Please Enter Your pin Number"
     });
-    if (pinAnswar.pin === pinNumber) {
+    if (Number(pinAnswar.pin) === pinNumber) {
         console.log("Correct Pin NO");
         const operationAnswar = await inquirer.prompt([
             {

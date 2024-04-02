@@ -4,13 +4,11 @@ let myBalance = 10000
 const pinNumber = 1234
 async function Atm(){
 
-
-
 const pinAnswar = await inquirer.prompt(
     {
         type:"number",    
         name:"pin",
-        message: "Please Enter Your Number"
+        message: "Please Enter Your pin Number"
 
     }
 
