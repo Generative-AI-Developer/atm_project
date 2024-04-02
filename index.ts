@@ -15,7 +15,7 @@ const pinAnswar = await inquirer.prompt(
     }
 
     )
-    if(pinAnswar.pin===pinNumber){
+    if(Number(pinAnswar.pin)===pinNumber){
         console.log("Correct Pin NO")
 
     const operationAnswar = await     inquirer.prompt([
